@@ -6,5 +6,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "src/app/(home)/(tabs)/profile.jsx", "src/app/(home)/calls/index.jsx"  ]
+, "src/app/(home)/(tabs)/profile.jsx", "src/app/(home)/calls/[id].jsx"  ]
 }
