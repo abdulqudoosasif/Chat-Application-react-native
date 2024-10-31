@@ -5,7 +5,7 @@ import { Channel as ChannelType, useChatContext } from 'stream-chat-expo';
 import { Channel, MessageInput, MessageList } from 'stream-chat-expo'; 
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useStreamVideoClient } from '@stream-io/video-react-native-sdk';
-// import * as Crypto from 'expo-crypto';
+import * as Crypto from 'expo-crypto';
 
 const Index = () => {
   const [channel, setChannel] = useState (null);
@@ -23,12 +23,12 @@ const Index = () => {
 
   const joinCall = async () => {
    
-    // const members = Object.values(channel.state.members).map((member) => ({
-    //   user_id: member.user_id,
-    // }));
+    const members = Object.values(channel.state.members).map((member) => ({
+      user_id: member.user_id,
+    }));
 
     // create a call using the channel members
-    // const call = videoClient.call('default', Crypto.randomUUID());
+    const call = videoClient.call('default', Crypto.randomUUID());
     // await call.getOrCreate({
     //   ring: true,
     //   data: {
