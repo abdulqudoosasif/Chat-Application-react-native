@@ -37,7 +37,7 @@ const Index = () => {
     });
 
     // navigate to the call screen
-    router.push(`/calls`);
+    router.push(`/calls/${call.id}`);
   };
 
  if(!channel){

@@ -20,7 +20,7 @@ const _layout = () => {
           <Stack.Screen name='channels/[cid]'     options={{
           title: 'Chat', headerBackTitle:'Back'}}/>
           <Stack.Screen name='users' options={{ headerBackTitle: "Back", title: 'Users' }} />
-          <Stack.Screen name='calls/index' options={{ headerShown: false }} />
+          {/* <Stack.Screen name='calls/index' options={{ headerShown: false }} /> */}
         </Stack>
       </VideoProvider>
     </ChatProvider>
